@@ -1,15 +1,21 @@
 import React from 'react';
-import './App.css';
 import './index.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+import LandingPage from './pages/Landing';
+import ErrorPage from './pages/Error';
 
 function App() {
-  return (
-    <div className="text-center">
-      <header>
-        <h1>Hi</h1>
-      </header>
-    </div>
-  );
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      // element: <RootLayout />,
+      errorElement: <ErrorPage />,
+      children: [{ path: '/', element: <LandingPage /> }],
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;
