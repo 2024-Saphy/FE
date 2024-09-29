@@ -1,14 +1,18 @@
 import React from 'react';
+import { MdPersonSearch, MdOutlinePriceChange } from 'react-icons/md';
+import { FcInspection } from 'react-icons/fc';
 
 function FeaturesSection() {
   return (
     <section className="flex items-center justify-center bg-white py-20 text-gray-900">
       <div className="max-w-6xl text-center">
         <h2 className="mb-20 text-3xl font-bold sm:text-4xl">Our Features</h2>
+
         <div className="mx-5 my-4 grid grid-cols-1 gap-11 md:grid-cols-2 lg:grid-cols-3">
           <div className="rounded-3xl border p-6 shadow-lg">
-            <div className="my-5 text-center">
+            <div className="my-5 items-center text-center">
               <h1 className="text-3xl">사진 자리</h1>
+              <MdPersonSearch />
             </div>
             <h3 className="my-4 text-2xl font-semibold">품질</h3>
             <p className="text-md">
@@ -17,8 +21,9 @@ function FeaturesSection() {
             </p>
           </div>
           <div className="rounded-3xl border p-6 shadow-lg">
-            <div className="my-5 text-center">
+            <div className="my-5 items-center text-center">
               <h1 className="text-3xl">사진 자리</h1>
+              <MdOutlinePriceChange />
             </div>
             <h3 className="my-4 text-2xl font-semibold">가격</h3>
             <p className="text-md">
@@ -27,8 +32,9 @@ function FeaturesSection() {
             </p>
           </div>
           <div className="rounded-3xl border p-6 shadow-lg">
-            <div className="my-5 text-center">
+            <div className="my-5 items-center text-center">
               <h1 className="text-3xl">사진 자리</h1>
+              <FcInspection />
             </div>
             <h3 className="my-4 text-2xl font-semibold">투명성</h3>
             <p className="text-md">
