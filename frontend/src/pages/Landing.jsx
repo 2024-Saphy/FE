@@ -1,13 +1,20 @@
 import React from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
+import MainSection from '../components/section/MainSection';
+import AboutSection from '../components/section/AboutSection';
+import FeatureSection from '../components/section/FeatureSection';
 
 function LandingPage() {
   return (
-    <div className="mt-20 grid grid-cols-1">
+    <div className="grid grid-cols-1">
       <Header />
       <div className="relative">
-        <h1 className="text-center text-3xl">Hi</h1>
+        <MainSection />
+        <AboutSection />
+        <FeatureSection />
       </div>
+      <Footer />
     </div>
   );
 }
