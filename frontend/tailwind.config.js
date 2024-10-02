@@ -11,16 +11,6 @@ module.exports = {
         gmarketbold: ['GmarketSansBold', 'sans-serif'],
       },
       keyframes: {
-        slidein: {
-          '0%': {
-            opacity: 0,
-            transform: 'translateX(-20px)',
-          },
-          '100%': {
-            opacity: 1,
-            transform: 'translateX(0)',
-          },
-        },
         fadein: {
           '0%': {
             opacity: 0,
@@ -39,6 +29,27 @@ module.exports = {
           '100%': {
             opacity: 0,
             transform: 'translateY(-5px)',
+          },
+        },
+        typingCursor: {
+          '0%': {
+            borderRight: '2px solid white',
+          },
+          '50%': {
+            borderRight: '2px solid transparent',
+          },
+          '100%': {
+            borderRight: '2px solid white',
+          },
+        },
+        slidein: {
+          '0%': {
+            opacity: 0,
+            transform: 'translateX(-20px)',
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translateX(0)',
           },
         },
         expand: {
@@ -72,9 +83,12 @@ module.exports = {
         },
       },
       animation: {
-        slidein: 'slidein 1s forwards',
-        fadein: 'fadein 0.5s ease',
+        fadein: 'fadein 2s ease-in-out',
+        fadeinDelay1: 'fadein 2s ease-in-out 1s forwards',
+        fadeinDelay2: 'fadein 2s ease-in-out 1.5s forwards',
+        typingCursor: 'typingCursor 1s step-end infinite',
         fadeout: 'fadeout 0.5s ease',
+        slidein: 'slidein 1s forwards',
         bounce: 'bounce 1.5s infinite',
         expand: 'expand 0.3s ease-in-out',
         collapse: 'collapse 0.3s ease-in-out',
