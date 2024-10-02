@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      colors: {
+        'my-color': '#9ABCFF',
+      },
       fontFamily: {
         gmarketmedium: ['GmarketSansMedium', 'sans-serif'],
         gmarketbold: ['GmarketSansBold', 'sans-serif'],
