@@ -10,9 +10,8 @@ function FeaturesSection() {
 
         <div className="mx-5 my-4 grid grid-cols-1 gap-11 md:grid-cols-2 lg:grid-cols-3">
           <div className="rounded-3xl border p-6 shadow-lg">
-            <div className="my-5 items-center text-center">
-              <h1 className="text-3xl">사진 자리</h1>
-              <MdPersonSearch />
+            <div className="my-5 flex items-center justify-center text-center">
+              <MdPersonSearch className="text-8xl" />
             </div>
             <h3 className="my-4 text-2xl font-semibold">품질</h3>
             <p className="text-md">
@@ -21,9 +20,8 @@ function FeaturesSection() {
             </p>
           </div>
           <div className="rounded-3xl border p-6 shadow-lg">
-            <div className="my-5 items-center text-center">
-              <h1 className="text-3xl">사진 자리</h1>
-              <MdOutlinePriceChange />
+            <div className="my-5 flex items-center justify-center text-center">
+              <MdOutlinePriceChange className="text-8xl" />
             </div>
             <h3 className="my-4 text-2xl font-semibold">가격</h3>
             <p className="text-md">
@@ -32,9 +30,8 @@ function FeaturesSection() {
             </p>
           </div>
           <div className="rounded-3xl border p-6 shadow-lg">
-            <div className="my-5 items-center text-center">
-              <h1 className="text-3xl">사진 자리</h1>
-              <FcInspection />
+            <div className="my-5 flex items-center justify-center text-center">
+              <FcInspection className="text-8xl" />
             </div>
             <h3 className="my-4 text-2xl font-semibold">투명성</h3>
             <p className="text-md">
