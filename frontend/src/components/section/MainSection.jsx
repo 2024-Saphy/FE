@@ -2,7 +2,7 @@ import React from 'react';
 import './MainSection.css';
 import appstoreDownload from '../../assets/appstore_download.png';
 import playstoreDownload from '../../assets/playstore_download.png';
-import TypingEffect from '../../hooks/TypingEffect';
+// import TypingEffect from '../../hooks/TypingEffect';
 
 function MainSection() {
   return (
@@ -11,11 +11,14 @@ function MainSection() {
         <h1 className="mb-4 animate-fadein text-4xl font-bold sm:text-5xl lg:text-6xl">
           Welcome to Saphy
         </h1>
-        <p className="mb-8 text-lg sm:text-xl lg:text-2xl">
+        <p className="mb-8 animate-fadeinDelay1 text-lg opacity-0 sm:text-xl lg:text-2xl">
+          중고 전자기기 거래 마켓플레이스 Saphy 에 오신 것을 환영합니다.
+          {/*
           <TypingEffect text="중고 전자기기 거래 마켓플레이스 Saphy 에 오신 것을 환영합니다." />
+          */}
         </p>
 
-        <div className="animate-fadeinDelay1 flex justify-center space-x-4 opacity-0">
+        <div className="flex animate-fadeinDelay2 justify-center space-x-4 opacity-0">
           <a href="https://play.google.com/store/">
             <img
               src={playstoreDownload}
