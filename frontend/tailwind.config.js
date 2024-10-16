@@ -84,8 +84,8 @@ module.exports = {
       },
       animation: {
         fadein: 'fadein 2s ease-in-out',
-        fadeinDelay1: 'fadein 2s ease-in-out 1s forwards',
-        fadeinDelay2: 'fadein 2s ease-in-out 1.5s forwards',
+        fadeinDelay1: 'fadein 1.5s ease-in-out 0.5s forwards',
+        fadeinDelay2: 'fadein 1.5s ease-in-out 1s forwards',
         typingCursor: 'typingCursor 1s step-end infinite',
         fadeout: 'fadeout 0.5s ease',
         slidein: 'slidein 1s forwards',
