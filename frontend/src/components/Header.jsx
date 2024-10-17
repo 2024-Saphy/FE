@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 import { FaGithub, FaYoutube } from 'react-icons/fa';
+import saphyLogo from '../assets/Saphy_title_skyblue.svg';
 
 function Header() {
   return (
@@ -12,7 +13,7 @@ function Header() {
             to="/"
             className="flex transform items-center text-white transition duration-300 ease-in-out hover:scale-110 hover:text-blue-400"
           >
-            <span className="text-xl">Saphy</span>
+            <img src={saphyLogo} alt="Saphy Logo" className="h-8" />
           </Link>
         </li>
         <li className="flex items-center space-x-6">
