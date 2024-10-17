@@ -23,14 +23,14 @@ function MainSection() {
             <img
               src={playstoreDownload}
               alt="Play Store Download"
-              className="h-12 w-auto"
+              className="h-12 w-auto duration-300 ease-in-out hover:scale-110"
             />
           </a>
           <a href="https://www.apple.com/kr/app-store/">
             <img
               src={appstoreDownload}
               alt="App Store Download"
-              className="h-12 w-auto"
+              className="h-12 w-auto duration-300 ease-in-out hover:scale-110"
             />
           </a>
         </div>
