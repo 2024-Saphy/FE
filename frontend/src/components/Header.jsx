@@ -11,7 +11,7 @@ function Header() {
         <li className="flex items-center">
           <Link
             to="/"
-            className="flex transform items-center text-white transition duration-300 ease-in-out hover:scale-110 hover:text-blue-400"
+            className="flex transform items-center text-white transition duration-300 ease-in-out hover:scale-110"
           >
             <img src={saphyLogo} alt="Saphy Logo" className="h-8" />
           </Link>
@@ -23,9 +23,15 @@ function Header() {
             rel="noopener noreferrer"
             aria-label="Github"
           >
-            <FaGithub size={30} className="hover:text-lime-200" />
+            <FaGithub
+              size={30}
+              className="duration-300 ease-in-out hover:scale-110"
+            />
           </a>
-          <FaYoutube size={30} className="hover:text-lime-200" />
+          <FaYoutube
+            size={30}
+            className="duration-300 ease-in-out hover:scale-110"
+          />
         </li>
       </ul>
     </nav>
