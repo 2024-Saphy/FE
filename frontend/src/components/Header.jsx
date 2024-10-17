@@ -30,7 +30,7 @@ function Header() {
           </a>
           <FaYoutube
             size={30}
-            className="duration-300 ease-in-out hover:scale-110"
+            className="duration-300 ease-in-out hover:scale-125"
           />
         </li>
       </ul>
