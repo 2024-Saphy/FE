@@ -20,7 +20,7 @@ function AboutSection() {
   useEffect(() => {
     // 페이지가 처음 로드되거나 새로고침될 때 스크롤을 맨 위로 이동
     const handleBeforeUnload = () => {
-      window.scrollTo(0, 0); // 새로고침 시 스크롤을 맨 위로 이동
+      window.scrollTo(0, 0);
     };
 
     window.addEventListener('beforeunload', handleBeforeUnload);
@@ -71,7 +71,7 @@ function AboutSection() {
             className="text-md whitespace-pre-line"
             initial={{ opacity: 0, x: -50 }}
             animate={controlText}
-            transition={{ duration: 0.8, delay: 0.3 }} // 딜레이 추가
+            transition={{ duration: 0.8, delay: 0.3 }}
           >
             사피/Saphy는 무엇을 하는 곳인가요?
             <br />
