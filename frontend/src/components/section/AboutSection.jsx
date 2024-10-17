@@ -18,12 +18,28 @@ function AboutSection() {
   });
 
   useEffect(() => {
-    if (inViewImage) {
-      controlImage.start({ opacity: 1, scale: 1 });
-    }
-    if (inViewText) {
-      controlTitle.start({ opacity: 1, x: 0 });
-      controlText.start({ opacity: 1, x: 0 });
+    // 페이지가 처음 로드되거나 새로고침될 때 스크롤을 맨 위로 이동
+    const handleBeforeUnload = () => {
+      window.scrollTo(0, 0); // 새로고침 시 스크롤을 맨 위로 이동
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    // 클린업: 컴포넌트가 언마운트될 때 이벤트 리스너 제거
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      if (inViewImage) {
+        controlImage.start({ opacity: 1, scale: 1 });
+      }
+      if (inViewText) {
+        controlTitle.start({ opacity: 1, x: 0 });
+        controlText.start({ opacity: 1, x: 0 });
+      }
     }
   }, [controlImage, controlTitle, controlText, inViewImage, inViewText]);
 
