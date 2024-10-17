@@ -56,7 +56,7 @@ function AboutSection() {
           transition={{ duration: 0.8 }} // 애니메이션 속도
         />
 
-        <div className="max-10 3xl mt-20 text-left">
+        <div className="mx-auto mt-20 max-w-[90%] text-left">
           <motion.h2
             ref={refText}
             className="mb-10 text-3xl font-bold sm:text-4xl"
@@ -82,9 +82,9 @@ function AboutSection() {
             저희 플랫폼에 등록된 판매자는 사피의 엄격한 검수과정에 의거한 <br />
             품질 기준을 통과한 상품들을 구매자분들께 제공합니다.
             <br />
-            <br /> 이 외의 Sahpy에 관한 자세한 내용은 FAQ 내용을 참고해주시길
+            {/* <br /> 이 외의 Sahpy에 관한 자세한 내용은 FAQ 내용을 참고해주시길
             부탁드립니다.
-            <br />
+            <br /> */}
             <br />
             사피는 판매자, 구매자 분들에게 최적의 상품, 검수 과정의 안정성,
             신뢰성 및 품질에 관해 최선의 서비스를 제공드리고자 합니다.
